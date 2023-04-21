@@ -4,7 +4,8 @@ const initialState = {
 };
 export default function cartreducerItem(state = initialState, action) {
   switch (action.type) {
-    case "ADD_ITEM":
+    case "ADD_TO_CART":
+      console.log(action);
       return {
         ...state,
         cartdata: action.data,
@@ -15,4 +16,5 @@ export default function cartreducerItem(state = initialState, action) {
   }
 }
 
-//this reducer save in root reducer index.js
+//1 this reducer save in root reducer index.js
+//2 after save go for store in homecomtainer where you can create connect methods

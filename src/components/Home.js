@@ -1,6 +1,8 @@
 import React from "react";
 
-const Home = () => {
+const Home = (props) => {
+  //console.warn(props); here we get home conatinger addtocarthandler
+  console.warn(props);
   return (
     <div>
       <div className="cartitem">
@@ -20,11 +22,17 @@ const Home = () => {
           <h3>Mobile</h3>
         </div>
         <div>
-          <p>I-Phone</p>
+          <p>iPhone 14</p>
           <p>Price: 300000</p>
         </div>
         <div className="cart-button" style={{ paddingBottom: "30px" }}>
-          <button>Add To Cart</button>
+          <button
+            onClick={() =>
+              props.AddToCartHandler({ price: 300000, name: "iPhone 14" })
+            }
+          >
+            Add To Cart
+          </button>
         </div>
       </div>
     </div>
