@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = (props) => {
   //console.warn(props); here we get home conatinger addtocarthandler
-  console.warn(props.DataCart);
+  console.warn(props);
 
   return (
     <div>
@@ -29,6 +29,11 @@ const Home = (props) => {
             }
           >
             Add To Cart
+          </button>
+        </div>
+        <div style={{ paddingBottom: "30px" }}>
+          <button onClick={() => props.RemoveToCartHandler()}>
+            Remove To Cart
           </button>
         </div>
       </div>
