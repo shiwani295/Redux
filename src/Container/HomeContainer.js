@@ -4,7 +4,7 @@ import { AddToCart } from "../service/actions/action";
 
 //this is call when you already pass the data in store and now you want to use that data
 const mapStateToProps = (state) => ({
-  cartData: state,
+  DataCart: state.cartreducerItem, // get data come from reducer cartreducerItem
 });
 
 //thhis call when you want to pass data into store

@@ -2,11 +2,12 @@ import React from "react";
 
 const Home = (props) => {
   //console.warn(props); here we get home conatinger addtocarthandler
-  console.warn(props);
+  console.warn(props.DataCart);
+
   return (
     <div>
       <div className="cartitem">
-        <p>cart(0)</p>
+        <p>cart({props.DataCart.length})</p>
       </div>
 
       <h2>Home Component</h2>
