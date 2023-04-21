@@ -6,10 +6,6 @@ const Home = (props) => {
 
   return (
     <div>
-      <div className="cartitem">
-        <p>cart({props.DataCart.length})</p>
-      </div>
-
       <h2>Home Component</h2>
       <div
         style={{
